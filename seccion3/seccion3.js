@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    localStorage.removeItem('datosEncuesta');
+    reiniciarSeccion3();
 
     const fechaNacimientoInput = document.getElementById('fechaNacimiento');
     const zodiacoSelect = document.getElementById('zodiaco');
-    const colorFavoritoInput = document.getElementById('colorFavorito'); // Obtener el campo de color
+    const colorFavoritoInput = document.getElementById('colorFavorito');
 
     if (fechaNacimientoInput && zodiacoSelect && colorFavoritoInput) {
-        zodiacoSelect.disabled = true; // Deshabilitar el campo de selección del zodíaco
+        zodiacoSelect.disabled = true;
 
         fechaNacimientoInput.addEventListener('change', function() {
             const fechaNacimiento = new Date(this.value);
@@ -29,7 +29,27 @@ document.addEventListener('DOMContentLoaded', function() {
             else if ((mes == 2 && dia >= 19) || (mes == 3 && dia <= 20)) { zodiaco = 'piscis'; }
 
             zodiacoSelect.value = zodiaco;
-            colorFavoritoInput.focus(); // Mover el cursor al campo de color
+            colorFavoritoInput.focus();
         });
     }
 });
+
+function reiniciarSeccion3() {
+    const fechaNacimientoInput = document.getElementById('fechaNacimiento');
+    const zodiacoSelect = document.getElementById('zodiaco');
+    const colorFavoritoInput = document.getElementById('colorFavorito');
+    const servicioClienteSelect = document.querySelector('select[name="servicioCliente"]');
+    const recomendarRadios = document.querySelectorAll('input[name="recomendar"]');
+    const mejorasTextarea = document.getElementById('mejoras');
+    const caracteristicasCheckboxes = document.querySelectorAll('input[name="caracteristicas"]');
+
+    if (fechaNacimientoInput && zodiacoSelect && colorFavoritoInput) {
+        fechaNacimientoInput.value = '';
+        zodiacoSelect.value = '';
+        colorFavoritoInput.value = '';
+        servicioClienteSelect.value = '';
+        recomendarRadios.forEach(radio => radio.checked = false);
+        mejorasTextarea.value = '';
+        caracteristicasCheckboxes.forEach(checkbox => checkbox.checked = false);
+    }
+}
