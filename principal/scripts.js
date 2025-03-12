@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    cargarSeccion('seccion1.html');
+    cargarSeccion('seccion1.html, seccion2.html, seccion3.html');
 });
 
 function cargarSeccion(url) {
@@ -35,3 +35,4 @@ document.getElementById('surveyForm').addEventListener('submit', function(event)
         alert('Error al enviar la encuesta');
     });
 });
+
