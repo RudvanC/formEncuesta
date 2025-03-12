@@ -1,26 +1,76 @@
-<section>
-    <h2>Sección 4: Preferencias</h2>
-    <label for="rangoHorario">¿Qué rango horario prefieres que te contactemos?</label><br>
-    <input type="time" name="horaInicio" id="horaInicio">
-    <input type="time" name="horaFin" id="horaFin"><br><br>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="/seccion4/styles.css">
+</head>
+  <body>
+    <header>
+      <div class="nav-bar"> 
+          <div class="image-logo">
+            <h1>Formulario de Contacto</h1>
+          </div>
+        
+        
+          <div class="home-logo">
+            <h1>Logo</h1>
+          </div> 
+      </div>
 
-    <label>¿Qué métodos de pago prefieres?</label><br>
-    <input type="checkbox" name="metodoPago" id="tarjetaCredito" value="tarjetaCredito">
-    <label for="tarjetaCredito">Tarjeta de crédito</label><br>
-    <input type="checkbox" name="metodoPago" id="paypal" value="paypal">
-    <label for="paypal">PayPal</label><br>
-    <input type="checkbox" name="metodoPago" id="transferenciaBancaria" value="transferenciaBancaria">
-    <label for="transferenciaBancaria">Transferencia bancaria</label><br>
-    <input type="checkbox" name="metodoPago" id="efectivo" value="efectivo">
-    <label for="efectivo">Efectivo</label><br><br>
+      <div class="announcements">
+        <h2>Preferencias</h2>
+      </div>
+      
+    </header>
+      <section>
+        <main>
+          <section class="schedule">
+           <div class="hour"> 
+            <label for="preferred-time">¿En qué horario prefieres que te contactemos?</label>
+              <select id="preferred-time" name="preferred-time" required>
+                <option value="">Selecciona una opción</option>
+                <option value="morning">08:00-12:00</option>
+                <option value="afternoon">12:00-18:00</option>
+                <option value="night">18:00-00:00</option>
+              </select>
+            </div>
 
-    <label>¿Con qué frecuencia compras en nuestra tienda?</label><br>
-    <select name="frecuenciaCompra">
-        <option value="diariamente">Diariamente</option>
-        <option value="semanalmente">Semanalmente</option>
-        <option value="mensualmente">Mensualmente</option>
-        <option value="raramente">Rara vez</option>
-    </select><br><br>
+            <div class="personalized-hour">
+              <p>Si prefieres un horario específico, por favor indícalo:</p>
+                <div class="hours">
+                  <label for="horaInicio">Desde:</label>
+                  <input type="time" name="horaInicio" id="horaInicio">
+                  <label for="horaFin">Hasta:</label>
+                  <input type="time" name="horaFin" id="horaFin"><br><br>
+                </div>
+            </div>
+          </section>
 
-    <a href="/seccion3/seccion3.html">Anterior: Satisfaccion General</a>
-</section>
+
+         <section class="preffer-pay-method"> 
+            <label for="pay-method">Metodo de pago preferido:</label>
+            <select id="pay-method" name="pay-method" required>
+              <option value="">Selecciona una opción</option>
+              <option value="masculino">Tarjeta de crédito</option>
+              <option value="femenino">Paypal</option>
+              <option value="otro">Efectivo</option>
+              <option value="prefiero-no-decir">Transferencia bancaria</option>
+            </select>
+          </section>
+
+         <section class="purchase-frequency">
+            <label for="purchase-frequency">¿Con qué frecuencia compras en nuestra tienda?</label><br>
+            <select name="purchase-frequency" id="purchase-frequency" required>
+                <option value="diariamente">Diariamente</option>
+                <option value="semanalmente">Semanalmente</option>
+                <option value="mensualmente">Mensualmente</option>
+                <option value="raramente">Rara vez</option>
+            </select><br><br>
+          </section>
+        <a href="/seccion3/seccion3.html">Página Anterior</a>
+      </section>
+    </main>
+    </body>
+</html>

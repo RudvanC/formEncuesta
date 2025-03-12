@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  /*Estilo para todo el documento en general*/
+  body {
+    background: #3a373792;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    width: 100vw;
+  }
+
+/*Estilo para todo el contenido dentro de main*/
+  main{
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 3rem;
+    border: 2px solid #50aa9b;
+  }
+
+/*Estilo para la barra de navegación*/
+  .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #50aa9b;
+  }
+
+/*Barra donde apareceran anuncios o texto destacable*/
+  .announcements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: wheat;
+    height: 40px;
+  }
+
+
+/*Centrar texto del label y que ocupe todo el ancho de su contenedor
+y tambien que tenga un margen abajo*/
+    .schedule > p, .personalized-hour >p{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+/*Deja un espacio arriba en el texto de horario personalizado*/
+    .personalized-hour >p{
+        padding-top: 2rem;
+    }
+
+    .hours{
+        text-align: center;
+    }
+        
+
+/*Da estilo a la seccion de "preffer-pay-method"(metodo de pago preferido)*/
+    .preffer-pay-method{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+/*Estilo para todo la seccion "purchase-frequency"(frecuencia de compra)*/
+    .purchase-frequency{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+
+    .hour> label, .preffer-pay-method > label, .purchase-frequency > label{
+        text-align: center;
+    }
+
+    .hour{
+        display: flex;
+        flex-direction: column;
+    }
