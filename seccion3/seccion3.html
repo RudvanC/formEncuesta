@@ -1,58 +1,67 @@
-<section>
-    <h2>Sección 3: Satisfacción General</h2>
-    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-    <input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="DD/MM/AAAA" required>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Opinión Nos Importa</title>
+<body>
+        
+    <section>
+        <h2>Sección 3: Satisfacción General</h2>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="DD/MM/AAAA" required>
 
-    <label for="zodiaco">Zodiaco:</label>
-    <select id="zodiaco" name="zodiaco">
-        <option value="aries">Aries</option>
-        <option value="tauro">Tauro</option>
-        <option value="geminis">Géminis</option>
-        <option value="cancer">Cáncer</option>
-        <option value="leo">Leo</option>
-        <option value="virgo">Virgo</option>
-        <option value="libra">Libra</option>
-        <option value="escorpio">Escorpio</option>
-        <option value="sagitario">Sagitario</option>
-        <option value="capricornio">Capricornio</option>
-        <option value="acuario">Acuario</option>
-        <option value="piscis">Piscis</option>
-    </select><br><br>
+        <label for="zodiaco">Zodiaco:</label>
+        <select id="zodiaco" name="zodiaco">
+            <option value="aries">Aries</option>
+            <option value="tauro">Tauro</option>
+            <option value="geminis">Géminis</option>
+            <option value="cancer">Cáncer</option>
+            <option value="leo">Leo</option>
+            <option value="virgo">Virgo</option>
+            <option value="libra">Libra</option>
+            <option value="escorpio">Escorpio</option>
+            <option value="sagitario">Sagitario</option>
+            <option value="capricornio">Capricornio</option>
+            <option value="acuario">Acuario</option>
+            <option value="piscis">Piscis</option>
+        </select><br><br>
 
-    <label for="colorFavorito">Color Favorito:</label>
-    <input type="color" id="colorFavorito" name="colorFavorito"><br><br>
+        <label for="colorFavorito">Color Favorito:</label>
+        <input type="color" id="colorFavorito" name="colorFavorito"><br><br>
+        
+        <label>¿Cómo calificarías nuestro servicio al cliente?</label><br>
+        <select name="servicioCliente">
+            <option value="excelente">Excelente</option>
+            <option value="bueno">Bueno</option>
+            <option value="regular">Regular</option>
+            <option value="malo">Malo</option>
+        </select><br><br>
 
-    <label>¿Cómo calificarías nuestro servicio al cliente?</label><br>
-    <select name="servicioCliente">
-        <option value="excelente">Excelente</option>
-        <option value="bueno">Bueno</option>
-        <option value="regular">Regular</option>
-        <option value="malo">Malo</option>
-    </select><br><br>
+        <label>¿Recomendarías nuestro producto a un amigo?</label><br>
+        <input type="radio" id="recomendarSi" name="recomendar" value="si">
+        <label for="recomendarSi">Sí</label><br>
+        <input type="radio" id="recomendarNo" name="recomendar" value="no">
+        <label for="recomendarNo">No</label><br><br>
 
-    <label>¿Recomendarías nuestro producto a un amigo?</label><br>
-    <input type="radio" id="recomendarSi" name="recomendar" value="si">
-    <label for="recomendarSi">Sí</label><br>
-    <input type="radio" id="recomendarNo" name="recomendar" value="no">
-    <label for="recomendarNo">No</label><br><br>
+        <label for="mejoras">Déjanos tus motivos o alguna aportación</label><br>
+        <textarea name="mejoras" id="mejoras" cols="50" rows="4"></textarea><br><br>
 
-    <label for="mejoras">Déjanos tus motivos o alguna aportación</label><br>
-    <textarea name="mejoras" id="mejoras" cols="50" rows="4"></textarea><br><br>
+        <label>¿Qué características valoras más en nuestros productos?</label><br>
+        <input type="checkbox" name="caracteristicas" id="calidad" value="calidad">
+        <label for="calidad">Calidad</label><br>
+        <input type="checkbox" name="caracteristicas" id="precio" value="precio">
+        <label for="precio">Precio</label><br>
+        <input type="checkbox" name="caracteristicas" id="diseño" value="diseño">
+        <label for="diseño">Diseño</label><br>
+        <input type="checkbox" name="caracteristicas" id="funcionalidad" value="funcionalidad">
+        <label for="funcionalidad">Funcionalidad</label><br>
+        <input type="checkbox" name="caracteristicas" id="marca" value="marca">
+        <label for="marca">Marca</label><br>
 
-    <label>¿Qué características valoras más en nuestros productos?</label><br>
-    <input type="checkbox" name="caracteristicas" id="calidad" value="calidad">
-    <label for="calidad">Calidad</label><br>
-    <input type="checkbox" name="caracteristicas" id="precio" value="precio">
-    <label for="precio">Precio</label><br>
-    <input type="checkbox" name="caracteristicas" id="diseño" value="diseño">
-    <label for="diseño">Diseño</label><br>
-    <input type="checkbox" name="caracteristicas" id="funcionalidad" value="funcionalidad">
-    <label for="funcionalidad">Funcionalidad</label><br>
-    <input type="checkbox" name="caracteristicas" id="marca" value="marca">
-    <label for="marca">Marca</label><br>
-
-    <a href="/seccion2/seccion2.html">Anterior: Experiencia de Compra</a>
-    <a href="/seccion4/seccion4.html">Siguiente: Preferencias</a>
+        <a href="/seccion2/seccion2.html">Anterior: Experiencia de Compra</a>
+        <a href="/seccion4/seccion4.html">Siguiente: Preferencias</a>
 
     <script src="seccion3.js"></script>
 </section>
+</body>
