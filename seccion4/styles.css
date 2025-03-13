@@ -39,6 +39,7 @@
     padding: 1rem 2rem;
     background: #E9F1FA;
     color: #00ABE4;
+    width: 100%;
   }
 
 /*Barra donde apareceran anuncios o texto destacable*/
@@ -47,7 +48,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background: #00ABE4;
+    background: #00abe475;
     height: 40px;
     color: #f8f8f8;
     font-size: 1.2rem;
@@ -61,7 +62,7 @@ y tambien que tenga un margen abajo*/
         align-items: center;
         text-align: center;
         width: 100%;
-        padding-bottom: 15px;
+        padding-bottom: 10px;   
     }
 /*Deja un espacio arriba en el texto de horario personalizado*/
     .personalized-hour >p{
@@ -75,14 +76,14 @@ y tambien que tenga un margen abajo*/
 
 /*Da estilo a la seccion de "preffer-pay-method"(metodo de pago preferido)*/
 
-    section {
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem;
-      border: 1px solid #E9F1FA;
-      border-radius: 5px;
-      background-color: #e9f1fa7c;
-      padding: 1rem;
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    border: 1px solid #E9F1FA;
+    border-radius: 5px;
+    background-color: #e9f1fa7c;
+    padding: 1rem;
   }
 
   .buttons{
@@ -92,7 +93,7 @@ y tambien que tenga un margen abajo*/
     gap: 1rem;
   }
 
-  .buttons > a{
+  .buttons > a, .buttons > button{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,40 +108,89 @@ y tambien que tenga un margen abajo*/
     color: black;
     text-decoration: none;
     font-weight: bold;
+    font-size: 17px;
   }
 
 /*Estilo para todo la seccion "purchase-frequency"(frecuencia de compra)*/
-    .purchase-frequency{
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
+  .purchase-frequency{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
     }
 
 
-    .hour> label, .preffer-pay-method > label, .purchase-frequency > label{
-        text-align: center;
+  .hour> label, .preffer-pay-method > label, .purchase-frequency > label{
+    text-align: center;
     }
 
-    .hour{
-        display: flex;
-        flex-direction: column;
+  .hour{
+    display: flex;
+    flex-direction: column;
     }
 
 
-    .pay-options {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 5px;
-  }
-  
-  .pay-options label {
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-      cursor: pointer;
+  .pay-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
   }
   
   .pay-options input[type="radio"] {
-      margin-right: 10px;
+      display: none; /* Ocultamos los radios */
   }
+  
+  /* Aplica el estilo a los labels */
+  .pay-options label {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e9f1fa7c;
+    border: 2px solid #00ABE4;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Cuando el radio button es seleccionado */
+  .pay-options input[type="radio"]:checked + label {
+    background-color: #00ABE4;
+    color: white;
+    border-color: #0078A0;
+    font-weight: bold;
+  }
+  
+  .preffer-pay-method > p{
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .schedule label,.schedule p, .purchase-frequency label{
+    font-weight: bold;
+  }
+
+  .schedule label{
+    margin-bottom:1rem ;
+  }
+
+  /* Estilo para los elementos <select> */
+select {
+  width: 100%; /* Ancho del select */
+  height: 40px; /* Altura del select */
+  padding: 8px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 4px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Color de fondo */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el select */
+  text-align: center;
+}
+
+/* Estilo para cuando el select está enfocado */
+select:focus {
+  border: 3px solid;
+  border-color: #00ABE4 /* Cambia el color del borde al enfocar */
+  outline: none; /* Elimina el contorno predeterminado */
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5); /* Sombra al enfocar */
+}

@@ -33,19 +33,19 @@ function mostrarValor(valor) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Obtén el enlace "Siguiente"
-    const enlaceSiguiente = document.getElementById('siguiente');
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('formSeccion2');
 
-    if (enlaceSiguiente) {
-        enlaceSiguiente.addEventListener('click', function(event) {
-            event.preventDefault(); // Evita la navegación automática
+    if (form) {
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
 
             // Obtén los valores de los campos
             const producto = document.getElementById('producto').value.trim();
             const fechaCompra = document.getElementById('fechaCompra').value;
             const recibo = document.getElementById('recibo').files[0];
             const comentarios = document.getElementById('comentarios').value.trim();
+            const calificacion = document.getElementById('calificacion').value;
 
             // Validar que todos los campos estén llenos
             let valido = true;
@@ -70,10 +70,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 valido = false;
             }
 
-            // Si todos los campos están llenos, redirige a la siguiente sección
-            if (valido) {
-                window.location.href = "/seccion3/seccion3.html";
+            if (!valido) {
+                return; // Detener el envío si la validación falla
             }
+
+            // Guardar datos en localStorage
+            const datosSeccion2 = {
+                producto,
+                fechaCompra,
+                calificacion,
+                comentarios,
+                reciboNombre: recibo.name, // Guardar solo el nombre del archivo
+            };
+            localStorage.setItem('datosSeccion2', JSON.stringify(datosSeccion2));
+
+            // Redirigir a la siguiente sección
+            window.location.href = '/seccion3/seccion3.html';
         });
+    } else {
+        console.error('El formulario con ID "formSeccion2" no fue encontrado.');
     }
 });

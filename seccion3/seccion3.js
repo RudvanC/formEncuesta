@@ -91,3 +91,30 @@ function formatearFecha(fecha) {
 
     return formateada;
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('formSeccion3');
+
+    if (form) {
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
+
+            // Recopilar datos del formulario
+            const formData = new FormData(form);
+            const datos = {};
+            formData.forEach((value, key) => {
+                datos[`seccion3_${key}`] = value; // Agregar prefijo "seccion3_"
+            });
+
+            // Guardar datos en localStorage
+            localStorage.setItem('datosSeccion3', JSON.stringify(datos));
+
+            // Redirigir a la siguiente sección
+            window.location.href = '/seccion4/seccion4.html'; // Ruta corregida
+        });
+    } else {
+        console.error('El formulario con ID "formSeccion3" no fue encontrado.');
+    }
+});

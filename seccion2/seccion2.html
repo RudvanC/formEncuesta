@@ -6,25 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Contacto</title>
   <link rel="stylesheet" href="/seccion2/styles.css">
-<header>
-    <div class="nav-bar"> 
-        <div class="image-logo">
-         <a href="/principal/index.html"><img src="/Imagenes/logo.png" alt="Logo empresa LATAMCODERS"></a>
-        </div>
-      
-      
-        <div class="home-logo">
-          <a href="/principal/index.html"><img src="/Imagenes/bx--home.svg" alt="Logo empresa LATAMCODERS"></a>
-        </div> 
-    </div>
-
-    <div class="announcements">
-      <p>Experiencia de Compra</p>
-    </div>
-    
-  </header>
+</head>
   <body>
+    <header>
+      <div class="nav-bar"> 
+          <div class="image-logo">
+           <a href="/principal/index.html"><img src="/Imagenes/logo.png" alt="Logo empresa LATAMCODERS"></a>
+          </div>
+        
+        
+          <div class="home-logo">
+            <a href="/principal/index.html"><img src="/Imagenes/bx--home.svg" alt="Logo empresa LATAMCODERS"></a>
+          </div> 
+      </div>
+  
+      <div class="announcements">
+        <p>Experiencia de Compra</p>
+      </div>
+      
+    </header>
 <main>
+  <form id="formSeccion2" method="POST" enctype="multipart/form-data">
     <!-- Producto Comprado -->
     <section class="producto">    
         <label for="producto">Producto Comprado:</label>
@@ -60,10 +62,12 @@
 
     <!-- Navegación -->
     <section>
-        <a href="/seccion1/seccion1.html">Anterior: Información Personal</a>
-        <a href="#" id="siguiente">Siguiente: Satisfacción General</a>
+        <a href="/seccion1/seccion1.html">Anterior</a>
+        <button type="submit"><a href="/seccion3/seccion3.html">Siguiente</a></button>
     </section>
 
      <script src="seccion2.js"></script>
-</section>
-</body>
+    </section>
+  </form>
+  </body>
+</html>
