@@ -1,207 +1,196 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-
-  /*Estilo para todo el documento en general*/
-  body {
-    background: #ffffff;
-    font-family: 'Lato', sans-serif;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("/Imagenes/background.webp"); /* Asegúrate de que la ruta es correcta */
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
+
+
+/*Estilo para todo el documento en general*/
+body {
+  background: #ffffff;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/Imagenes/background.webp"); /* Asegúrate de que la ruta es correcta */
+  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+}
+
 
 /*Estilo para todo el contenido dentro de main*/
-  main{
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    margin: auto;
-    margin-top: 3rem;
-    padding: 5rem;
+main{
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 5rem;
 
-    border-radius: 50px;
-  }
+  border-radius: 50px;
+}
 
 /*Estilo para la barra de navegación*/
-  .nav-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: #E9F1FA;
-    color: #00ABE4;
-    width: 100%;
-  }
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #E9F1FA;
+  color: #00ABE4;
+  width: 100%;
+}
 
 /*Barra donde apareceran anuncios o texto destacable*/
-  .announcements{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background: #00abe475;
-    height: 40px;
-    color: #f8f8f8;
-    font-size: 1.2rem;
-  }
+.announcements{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: #00abe475;
+  height: 40px;
+  color: #f8f8f8;
+  font-size: 1.2rem;
+}
 
 
 /*Centrar texto del label y que ocupe todo el ancho de su contenedor
 y tambien que tenga un margen abajo*/
-    .schedule > p, .personalized-hour >p{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        padding-bottom: 10px;   
-    }
+  .schedule > p, .personalized-hour >p{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      padding-bottom: 10px;   
+  }
 /*Deja un espacio arriba en el texto de horario personalizado*/
-    .personalized-hour >p{
-        padding-top: 2rem;
-    }
+  .personalized-hour >p{
+      padding-top: 2rem;
+  }
 
-    .hours{
-        text-align: center;
-    }
-        
+  .hours{
+      text-align: center;
+  }
+      
 
 /*Da estilo a la seccion de "preffer-pay-method"(metodo de pago preferido)*/
 
-<<<<<<< HEAD
-  section {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    border: 1px solid #E9F1FA;
-    border-radius: 5px;
-    background-color: #e9f1fa7c;
-    padding: 1rem;
-=======
-    section {
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem;
-      border: 1px solid #E9F1FA;
-      border-radius: 5px;
-      background-color: hsla(212, 63%, 95%, 0.486);
-      padding: 1rem;
->>>>>>> 8672e05 (cambios)
-  }
+section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  border: 1px solid #E9F1FA;
+  border-radius: 5px;
+  background-color: #e9f1fa7c;
+  padding: 1rem;
+}
 
-  .buttons{
-    display: flex;
-    flex-direction: row ;
-    justify-content: space-between;
-    gap: 1rem;
-  }
+.buttons{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
-  .buttons > a, .buttons > button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    border: 2px solid #e9f1fa;
-    height: 3rem;
-    width: 10rem;
-    border-radius: 5px;
-    background-color: #e9f1fa7c;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 17px;
-  }
+.buttons > a, .buttons > button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  border: 2px solid #e9f1fa;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 5px;
+  background-color: #e9f1fa7c;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
 
 /*Estilo para todo la seccion "purchase-frequency"(frecuencia de compra)*/
-  .purchase-frequency{
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    }
-
-
-  .hour> label, .preffer-pay-method > label, .purchase-frequency > label{
-    text-align: center;
-    }
-
-  .hour{
-    display: flex;
-    flex-direction: column;
-    }
-
-
-  .pay-options {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 5px;
-  }
-  
-  .pay-options input[type="radio"] {
-      display: none; /* Ocultamos los radios */
-  }
-  
-  /* Aplica el estilo a los labels */
-  .pay-options label {
-    display: block;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: #e9f1fa7c;
-    border: 2px solid #00ABE4;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  /* Cuando el radio button es seleccionado */
-  .pay-options input[type="radio"]:checked + label {
-    background-color: #00ABE4;
-    color: white;
-    border-color: #0078A0;
-    font-weight: bold;
-  }
-  
-  .preffer-pay-method > p{
-    text-align: center;
-    font-weight: bold;
+.purchase-frequency{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
   }
 
-  .schedule label,.schedule p, .purchase-frequency label{
-    font-weight: bold;
-  }
 
-  .schedule label{
-    margin-bottom:1rem ;
-  }
-
-  /* Estilo para los elementos <select> */
-select {
-  width: 100%; /* Ancho del select */
-  height: 40px; /* Altura del select */
-  padding: 8px; /* Espaciado interno */
-  font-size: 16px; /* Tamaño de la fuente */
-  border: 1px solid #ccc; /* Borde */
-  border-radius: 4px; /* Bordes redondeados */
-  background-color: #f9f9f9; /* Color de fondo */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el select */
+.hour> label, .preffer-pay-method > label, .purchase-frequency > label{
   text-align: center;
+  }
+
+.hour{
+  display: flex;
+  flex-direction: column;
+  }
+
+
+.pay-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.pay-options input[type="radio"] {
+    display: none; /* Ocultamos los radios */
+}
+
+/* Aplica el estilo a los labels */
+.pay-options label {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #e9f1fa7c;
+  border: 2px solid #00ABE4;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Cuando el radio button es seleccionado */
+.pay-options input[type="radio"]:checked + label {
+  background-color: #00ABE4;
+  color: white;
+  border-color: #0078A0;
+  font-weight: bold;
+}
+
+.preffer-pay-method > p{
+  text-align: center;
+  font-weight: bold;
+}
+
+.schedule label,.schedule p, .purchase-frequency label{
+  font-weight: bold;
+}
+
+.schedule label{
+  margin-bottom:1rem ;
+}
+
+/* Estilo para los elementos <select> */
+select {
+width: 100%; /* Ancho del select */
+height: 40px; /* Altura del select */
+padding: 8px; /* Espaciado interno */
+font-size: 16px; /* Tamaño de la fuente */
+border: 1px solid #ccc; /* Borde */
+border-radius: 4px; /* Bordes redondeados */
+background-color: #f9f9f9; /* Color de fondo */
+cursor: pointer; /* Cambia el cursor al pasar sobre el select */
+text-align: center;
 }
 
 /* Estilo para cuando el select está enfocado */
 select:focus {
-  border: 3px solid;
-  border-color: #00ABE4 /* Cambia el color del borde al enfocar */
-  outline: none; /* Elimina el contorno predeterminado */
-  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5); /* Sombra al enfocar */
+border: 3px solid;
+border-color: #00ABE4 /* Cambia el color del borde al enfocar */
+outline: none; /* Elimina el contorno predeterminado */
+box-shadow: 0 0 5px rgba(102, 175, 233, 0.5); /* Sombra al enfocar */
 }
