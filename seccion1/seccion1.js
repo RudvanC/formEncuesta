@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             localStorage.setItem('datosSeccion1', JSON.stringify(datos));
 
             // Redirigir a la siguiente sección
-            window.location.href = '/seccion2/seccion2.html'; // Ruta corregida
+            window.location.href = '/seccion2/seccion2.html';
         });
     } else {
         console.error('El formulario con ID "formSeccion1" no fue encontrado.');

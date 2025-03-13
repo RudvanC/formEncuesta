@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Opinión Nos Importa</title>
     <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <header>
         <div class="nav-bar"> 
             <div class="image-logo">
              <a href="/principal/index.html"><img src="/Imagenes/logo.png" alt="Logo empresa LATAMCODERS"></a>
             </div>
-          
           
             <div class="home-logo">
               <a href="/principal/index.html"><img src="/Imagenes/bx--home.svg" alt="Logo empresa LATAMCODERS"></a>
@@ -20,10 +20,11 @@
 
         <div class="announcements">
             <p>Satisfacción General</p>
-          </div>
+        </div>
     </header>
-        <main>
-            <form id="formSeccion3">
+    <main>
+        <form id="formSeccion3">
+            <!-- Fecha de Nacimiento y Zodiaco -->
             <section class="fecha">
                 <label for="fechaNacimiento">Fecha de Nacimiento:</label>
                 <input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="DD/MM/AAAA" required>
@@ -42,54 +43,59 @@
                     <option value="capricornio">Capricornio</option>
                     <option value="acuario">Acuario</option>
                     <option value="piscis">Piscis</option>
-            </select><br><br>
-    </section>
+                </select><br><br>
+            </section>
 
-    <section class="color">
-        <label for="colorFavorito">Color Favorito:</label>
-        <input type="color" id="colorFavorito" name="colorFavorito"><br><br>
+            <!-- Color Favorito y Servicio al Cliente -->
+            <section class="color">
+                <label for="colorFavorito">Color Favorito:</label>
+                <input type="color" id="colorFavorito" name="colorFavorito"><br><br>
 
-        <label>¿Cómo calificarías nuestro servicio al cliente?</label><br>
-        <select name="servicioCliente">
-            <option value="excelente">Excelente</option>
-            <option value="bueno">Bueno</option>
-            <option value="regular">Regular</option>
-            <option value="malo">Malo</option>
-        </select><br><br>
-    </section>
+                <label>¿Cómo calificarías nuestro servicio al cliente?</label><br>
+                <select name="servicioCliente">
+                    <option value="excelente">Excelente</option>
+                    <option value="bueno">Bueno</option>
+                    <option value="regular">Regular</option>
+                    <option value="malo">Malo</option>
+                </select><br><br>
+            </section>
 
-    <section class="recomendar">
-        <label>¿Recomendarías nuestro producto a un amigo?</label><br>
-        <input type="radio" id="recomendarSi" name="recomendar" value="si">
-        <label for="recomendarSi">Sí</label><br>
-        <input type="radio" id="recomendarNo" name="recomendar" value="no">
-        <label for="recomendarNo">No</label><br><br>
-    </section>
+            <!-- Recomendar Producto -->
+            <section class="recomendar">
+                <label>¿Recomendarías nuestro producto a un amigo?</label><br>
+                <input type="radio" id="recomendarSi" name="recomendar" value="si">
+                <label for="recomendarSi">Sí</label><br>
+                <input type="radio" id="recomendarNo" name="recomendar" value="no">
+                <label for="recomendarNo">No</label><br><br>
+            </section>
 
-    <section class="motivos">
-        <label for="mejoras">Déjanos tus motivos o alguna aportación</label><br>
-        <textarea name="mejoras" id="mejoras" cols="50" rows="4"></textarea><br><br>
-    </section>
+            <!-- Motivos o Aportaciones -->
+            <section class="motivos">
+                <label for="mejoras">Déjanos tus motivos o alguna aportación</label><br>
+                <textarea name="mejoras" id="mejoras" cols="50" rows="4"></textarea><br><br>
+            </section>
 
-    <section class="value">
-        <label>¿Qué características valoras más en nuestros productos?</label><br>
-        <input type="checkbox" name="caracteristicas" id="calidad" value="calidad">
-        <label for="calidad">Calidad</label><br>
-        <input type="checkbox" name="caracteristicas" id="precio" value="precio">
-        <label for="precio">Precio</label><br>
-        <input type="checkbox" name="caracteristicas" id="diseño" value="diseño">
-        <label for="diseño">Diseño</label><br>
-        <input type="checkbox" name="caracteristicas" id="funcionalidad" value="funcionalidad">
-        <label for="funcionalidad">Funcionalidad</label><br>
-        <input type="checkbox" name="caracteristicas" id="marca" value="marca">
-        <label for="marca">Marca</label><br>
-    </section>
+            <!-- Características Valoradas -->
+            <section class="value">
+                <label>¿Qué características valoras más en nuestros productos?</label><br>
+                <input type="checkbox" name="caracteristicas" id="calidad" value="calidad">
+                <label for="calidad">Calidad</label><br>
+                <input type="checkbox" name="caracteristicas" id="precio" value="precio">
+                <label for="precio">Precio</label><br>
+                <input type="checkbox" name="caracteristicas" id="diseño" value="diseño">
+                <label for="diseño">Diseño</label><br>
+                <input type="checkbox" name="caracteristicas" id="funcionalidad" value="funcionalidad">
+                <label for="funcionalidad">Funcionalidad</label><br>
+                <input type="checkbox" name="caracteristicas" id="marca" value="marca">
+                <label for="marca">Marca</label><br>
+            </section>
 
-    <section class="buttons">
-        <a href="/seccion2/seccion2.html"> Página Anterior</a>
-        <button type="submit"><a href="/seccion4/seccion4.html">Siguiente</a></button>
-    </section>
-    </form>
+            <!-- Navegación -->
+            <section class="buttons">
+                <a href="/seccion2/seccion2.html">Página Anterior</a>
+                <button type="submit">Siguiente</button>
+            </section>
+        </form>
     </main>
     <script src="seccion3.js"></script>
 </body>

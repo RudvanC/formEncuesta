@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,67 +6,62 @@
   <title>Formulario de Contacto</title>
   <link rel="stylesheet" href="/seccion2/styles.css">
 </head>
-  <body>
-    <header>
-      <div class="nav-bar"> 
-          <div class="image-logo">
-           <a href="/principal/index.html"><img src="/Imagenes/logo.png" alt="Logo empresa LATAMCODERS"></a>
-          </div>
-        
-        
-          <div class="home-logo">
-            <a href="/principal/index.html"><img src="/Imagenes/bx--home.svg" alt="Logo empresa LATAMCODERS"></a>
-          </div> 
+<body>
+  <header>
+    <div class="nav-bar"> 
+      <div class="image-logo">
+        <a href="/principal/index.html"><img src="/Imagenes/logo.png" alt="Logo empresa LATAMCODERS"></a>
       </div>
-  
-      <div class="announcements">
-        <p>Experiencia de Compra</p>
-      </div>
-      
-    </header>
-<main>
-  <form id="formSeccion2" method="POST" enctype="multipart/form-data">
-    <!-- Producto Comprado -->
-    <section class="producto">    
+      <div class="home-logo">
+        <a href="/principal/index.html"><img src="/Imagenes/bx--home.svg" alt="Logo empresa LATAMCODERS"></a>
+      </div> 
+    </div>
+    <div class="announcements">
+      <p>Experiencia de Compra</p>
+    </div>
+  </header>
+  <main>
+    <form id="formSeccion2" method="POST" enctype="multipart/form-data">
+      <!-- Producto Comprado -->
+      <section class="producto">    
         <label for="producto">Producto Comprado:</label>
         <input type="text" id="producto" name="producto" placeholder="Ingrese el nombre del producto" required>    
-    </section>
-    
-    <!-- Calificación de la Compra -->
-    <section class="calificacion">
+      </section>
+      
+      <!-- Calificación de la Compra -->
+      <section class="calificacion">
         <label for="calificacion">Calificación de la Compra:</label>
         <input type="range" id="calificacion" name="calificacion" min="1" max="10" value="5" oninput="mostrarValor(this.value)">
         <span id="valorRango">5</span>
         <span id="mensajeCalificacion"></span> <!-- Nuevo: Para mostrar el mensaje -->    
-    </section>
+      </section>
 
-    <!-- Comentarios -->
-    <section class="comentarios">    
+      <!-- Comentarios -->
+      <section class="comentarios">    
         <label for="comentarios">Comentarios:</label>
         <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí"></textarea>    
-    </section>
-    
-    <!-- Fecha de Compra -->
-    <section class="fecha-compra">    
+      </section>
+      
+      <!-- Fecha de Compra -->
+      <section class="fecha-compra">    
         <label for="fechaCompra">Fecha de Compra:</label>
         <input type="datetime-local" id="fechaCompra" name="fechaCompra" required>    
-    </section>
+      </section>
 
-    <!-- Archivo de Recibo -->
-    <section class="recibo">    
+      <!-- Archivo de Recibo -->
+      <section class="recibo">    
         <label for="recibo">Archivo de Recibo:</label>
         <input type="file" id="recibo" name="recibo" accept=".pdf,.jpg,.png" required>
         <small>Aceptamos formatos: PDF, JPG, PNG</small>    
-    </section>
+      </section>
 
-    <!-- Navegación -->
-    <div class ="buttons">
+      <!-- Navegación -->
+      <div class="buttons">
         <a href="/seccion1/seccion1.html">Anterior</a>
         <button type="submit"><a href="/seccion3/seccion3.html">Siguiente</a></button>
-    </div>
-
-     <script src="seccion2.js"></script>
-    </section>
-  </form>
-  </body>
+      </div>
+    </form>
+  </main>
+  <script src="seccion2.js"></script>
+</body>
 </html>
