@@ -167,3 +167,80 @@ select, .fecha input, .color input {
     .fecha label{
         padding-top: 1rem;
     }
+
+    .recommendation {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3px;
+        text-align: center;
+      }
+      
+      .recommendation input[type="radio"] {
+          display: none; /* Ocultamos los radios */
+      }
+      
+      /* Aplica el estilo a los labels */
+      .recommendation label {
+        display: block;
+        padding: 5px;
+        background-color: #e9f1fa7c;
+        border: 2px solid #00ABE4;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      
+      /* Cuando el radio button es seleccionado */
+      .recommendation input[type="radio"]:checked + label {
+        background-color: #1bbb30c7;
+        color: white;
+        border-color: #0078A0;
+        font-weight: bold;
+         }
+
+         .recommendation__title label{
+            border: none;
+            background-color: transparent;
+         }
+
+
+
+
+
+
+         .values {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3px;
+            text-align: center;
+          }
+          
+          .values input[type="checkbox"] {
+              display: none; /* Ocultamos los radios */
+          }
+          
+          /* Aplica el estilo a los labels */
+          .values label {
+            display: block;
+            padding: 5px;
+            background-color: #e9f1fa7c;
+            border: 2px solid #00ABE4;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+          
+          /* Cuando el radio button es seleccionado */
+          .values input[type="checkbox"]:checked + label {
+            background-color: #1bbb30c7;
+            color: white;
+            border-color: #0078A0;
+            font-weight: bold;
+             }
+    
+             .value__title label{
+                border: none;
+                background-color: transparent;
+             }
