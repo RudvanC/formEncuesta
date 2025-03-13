@@ -1,4 +1,106 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 button{
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff; /* Cambiado a blanco para mantener la consistencia */
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/Imagenes/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    padding: 5rem;
+    border-radius: 50px;
+    width: 60%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #E9F1FA;
+    color: #00ABE4;
+}
+
+.announcements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #00ABE4;
+    height: 40px;
+    color: #f8f8f8;
+    font-size: 1.2rem;
+}
+
+.announcements p {
+    margin: 0;
+    line-height: 40px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    border: 1px solid #E9F1FA;
+    border-radius: 5px;
+    background-color: hsla(212, 63%, 95%, 0.486);
+    padding: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: calc(100% - 12px); /* Asegura que ocupe todo el ancho disponible */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+a {
+    color: #00ABE4;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block; /* Permite aplicar márgenes y paddings correctamente */
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.button > a {
+>>>>>>> 25ba51c (correcciones)
+=======
+button{
+>>>>>>> 9832909 (cambios ana)
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,5 +115,57 @@ button{
     color: black;
     text-decoration: none;
     font-weight: bold;
+<<<<<<< HEAD
+<<<<<<< HEAD
     font-size: 17px;
   }
+=======
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input:invalid {
+    border-color: rgb(243, 239, 239);
+}
+
+input:valid {
+    border-color: green;
+}
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    main {
+        padding: 3rem;
+        width: 95%;
+        margin: 1.5rem auto;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 0.5rem;
+        width: 95%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: calc(100% - 12px);
+    }
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 480px) {
+    main {
+        padding: 2rem;
+    }
+}
+>>>>>>> 25ba51c (correcciones)
+=======
+>>>>>>> 6f1da46 (Revert "correcciones")
+=======
+    font-size: 17px;
+  }
+>>>>>>> 9832909 (cambios ana)
