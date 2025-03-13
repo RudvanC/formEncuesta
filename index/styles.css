@@ -23,7 +23,60 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 3rem;
+    height: 900px;
+}
+
+/* Estilos generales para el footer */
+.footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    font-family: 'Lato', sans-serif; /* Fuente */
+    border-top: 1px solid #444; /* Borde superior */
+}
+
+/* Contenedor del contenido del footer */
+.footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+/* Estilos para los enlaces del footer */
+.footer-links {
+    list-style: none; /* Quitar viñetas de la lista */
+    padding: 0; /* Quitar padding por defecto */
+    margin: 10px 0 0; /* Margen superior */
+    display: flex; /* Mostrar enlaces en línea */
+    justify-content: center; /* Centrar enlaces */
+    flex-wrap: wrap; /* Permitir que los enlaces se envuelvan en pantallas pequeñas */
+}
+
+.footer-links li {
+    margin: 0 10px; /* Espaciado entre enlaces */
+}
+
+.footer-links a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 14px; /* Tamaño de la fuente */
+    transition: color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.footer-links a:hover {
+    color: #00ABE4; /* Cambiar color al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column; /* Mostrar enlaces en columna en pantallas pequeñas */
+    }
+
+    .footer-links li {
+        margin: 5px 0; /* Espaciado entre enlaces en columna */
+    }
 }
 
 /* Contenedor de la cuadrícula */
@@ -86,7 +139,7 @@ main {
     z-index: 2; /* Asegura que esté por encima de los demás */
     grid-column: 1 / -1; /* Ocupa todas las columnas */
     grid-row: 1 / -1; /* Ocupa todas las filas */
-    background-color: #267792;
+    background-color: #2f3536;
 }
 
 /* Mostrar texto al hacer hover */
