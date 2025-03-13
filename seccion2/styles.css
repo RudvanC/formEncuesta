@@ -143,3 +143,25 @@ input {
     padding-top: 10px;
   }
   
+  /* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  main {
+      padding: 2rem; /* Reduce el padding en móviles */
+      width: 95%; /* Ocupa casi todo el ancho en móviles */
+      margin: 1rem auto; /* Reduce el margen en móviles */
+  }
+
+  section {
+      padding: 1rem; /* Reduce el padding en secciones en móviles */
+      margin: 0.5rem; /* Reduce el margen en secciones en móviles */
+      width: 95%; /* Ocupa casi todo el ancho en secciones en móviles */
+  }
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 480px) {
+  main {
+      padding: 1rem; /* Reduce aún más el padding en pantallas muy pequeñas */
+  }
+}
+
