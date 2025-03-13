@@ -46,7 +46,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function reiniciarSeccion3() {
-    // ... (función reiniciarSeccion3 sin cambios)
+    document.getElementById('fechaNacimiento').value = '';
+    document.getElementById('zodiaco').value = '';
+    document.getElementById('colorFavorito').value = '#000000'; // Restablece el color a negro (o cualquier otro valor predeterminado)
+    document.querySelector('select[name="servicioCliente"]').value = 'excelente'; // Restablece a la primera opción
+    document.querySelectorAll('input[name="recomendar"]').forEach(radio => radio.checked = false);
+    document.getElementById('mejoras').value = '';
+    document.querySelectorAll('input[name="caracteristicas"]').forEach(checkbox => checkbox.checked = false);
 }
 
 function validarFecha(fecha) {

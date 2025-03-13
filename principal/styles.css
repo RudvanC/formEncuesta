@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f8ff; /* Azul claro suave */
+}
+h1 {
+    color: #3366cc; /* Azul más intenso */
+}
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.button {
+    background-color: #4caf50; /* Verde alegre */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
