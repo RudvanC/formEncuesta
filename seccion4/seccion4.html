@@ -49,16 +49,16 @@
           </section>
 
 
-         <section class="preffer-pay-method"> 
-            <label for="pay-method">Metodo de pago preferido:</label>
-            <select id="pay-method" name="pay-method" required>
-              <option value="">Selecciona una opción</option>
-              <option value="masculino">Tarjeta de crédito</option>
-              <option value="femenino">Paypal</option>
-              <option value="otro">Efectivo</option>
-              <option value="prefiero-no-decir">Transferencia bancaria</option>
-            </select>
-          </section>
+          <section class="preffer-pay-method"> 
+            <p>Metodo de pago preferido:</p>
+            <div class="pay-options">
+                <label><input type="radio" name="pay-method" value="tarjeta" required> Tarjeta de crédito</label>
+                <label><input type="radio" name="pay-method" value="paypal"> Paypal</label>
+                <label><input type="radio" name="pay-method" value="efectivo"> Efectivo</label>
+                <label><input type="radio" name="pay-method" value="transferencia"> Transferencia bancaria</label>
+            </div>
+        </section>
+        
 
          <section class="purchase-frequency">
             <label for="purchase-frequency">¿Con qué frecuencia compras en nuestra tienda?</label><br>
