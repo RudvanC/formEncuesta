@@ -22,7 +22,7 @@ main {
     margin: 3rem auto; /* Centra horizontalmente y agrega margen superior */
     padding: 5rem;
     border-radius: 50px;
-    width: 80%; /* Ajusta el ancho para que no sea demasiado grande en móviles */
+    width: 600px; /* Ajusta el ancho para que no sea demasiado grande en móviles */
     
 }
 
@@ -151,3 +151,19 @@ textarea:valid {
     }
 }
 
+select, .fecha input, .color input {
+    width: 100%; /* Ancho del select */
+    height: 40px; /* Altura del select */
+    padding: 8px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el select */
+    text-align: center;
+    margin-top: 1rem;
+    }
+
+    .fecha label{
+        padding-top: 1rem;
+    }
