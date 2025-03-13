@@ -62,11 +62,15 @@
 
             <!-- Recomendar Producto -->
             <section class="recomendar">
-                <label>¿Recomendarías nuestro producto a un amigo?</label><br>
-                <input type="radio" id="recomendarSi" name="recomendar" value="si">
-                <label for="recomendarSi">Sí</label><br>
-                <input type="radio" id="recomendarNo" name="recomendar" value="no">
-                <label for="recomendarNo">No</label><br><br>
+                <div class="recommendation">
+                        <div class="recommendation__title">
+                            <label>¿Recomendarías nuestro producto a un amigo?</label><br>
+                        </div>
+                    <input type="radio" id="recomendarSi" name="recomendar" value="si">
+                    <label for="recomendarSi">Sí</label><br>
+                    <input type="radio" id="recomendarNo" name="recomendar" value="no">
+                    <label for="recomendarNo">No</label><br><br>
+                </div>    
             </section>
 
             <!-- Motivos o Aportaciones -->
@@ -77,17 +81,20 @@
 
             <!-- Características Valoradas -->
             <section class="value">
-                <label>¿Qué características valoras más en nuestros productos?</label><br>
+                <div class="values">    
+                    <div class="value__title">
+                        <label>¿Qué características valoras más en nuestros productos?</label>
+                    </div>
                 <input type="checkbox" name="caracteristicas" id="calidad" value="calidad">
-                <label for="calidad">Calidad</label><br>
+                <label for="calidad">Calidad</label>
                 <input type="checkbox" name="caracteristicas" id="precio" value="precio">
-                <label for="precio">Precio</label><br>
+                <label for="precio">Precio</label>
                 <input type="checkbox" name="caracteristicas" id="diseño" value="diseño">
-                <label for="diseño">Diseño</label><br>
+                <label for="diseño">Diseño</label>
                 <input type="checkbox" name="caracteristicas" id="funcionalidad" value="funcionalidad">
-                <label for="funcionalidad">Funcionalidad</label><br>
+                <label for="funcionalidad">Funcionalidad</label>
                 <input type="checkbox" name="caracteristicas" id="marca" value="marca">
-                <label for="marca">Marca</label><br>
+                <label for="marca">Marca</label>
             </section>
 
             <!-- Navegación -->
