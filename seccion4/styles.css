@@ -48,7 +48,7 @@ main{
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background: #00abe475;
+  background: #00ABE4;
   height: 40px;
   color: #f8f8f8;
   font-size: 1.2rem;
@@ -100,12 +100,12 @@ section {
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
-  border: 2px solid #e9f1fa;
+  border: 2px solid #0078A0;
   height: 3rem;
   width: 10rem;
   border-radius: 5px;
-  background-color: #e9f1fa7c;
-  color: black;
+  background-color: #00abe4d3;
+  color: #e7dbdbf5;
   text-decoration: none;
   font-weight: bold;
   font-size: 17px;

@@ -30,6 +30,17 @@
     border-radius: 50px;
   }
 
+  .announcements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #00ABE4;
+    height: 40px;
+    color: #f8f8f8;
+    font-size: 1.2rem;
+  }
+
   /*Estilo para la barra de navegación*/
   .nav-bar{
     display: flex;
@@ -69,3 +80,66 @@ button{
   font-weight: bold;
   font-size: 17px;
 }
+
+.buttons{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.buttons > a, .buttons > button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  border: 2px solid #0078A0;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 5px;
+  background-color: #00abe4d3;
+  color: #e7dbdbf5;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.buttons a{
+  text-decoration: none;
+  color: #e7dbdbf5;
+}
+
+section > label{
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+input {
+  width: 100%; /* Ancho del select */
+  height: 40px; /* Altura del select */
+  padding: 8px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 4px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Color de fondo */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el select */
+  text-align: center;
+  }
+
+  .recibo input{
+    background-color: #edf1f3;
+  }
+
+  .recibo small{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  

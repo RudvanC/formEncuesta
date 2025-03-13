@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-button{
-=======
+
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +35,35 @@ main {
     color: #00ABE4;
 }
 
-.announcements {
+button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border: 2px solid #0078A0;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 5px;
+    background-color: #00abe4d3;
+    color: #e7dbdbf5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  button a{
+    text-decoration: none;
+    color: #e7dbdbf5;
+  }
+
+  .button-size{
+    justify-content: center;
+    display:flex;
+  }
+
+.announcements{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +72,7 @@ main {
     height: 40px;
     color: #f8f8f8;
     font-size: 1.2rem;
-}
+  }
 
 .announcements p {
     margin: 0;
@@ -82,49 +106,6 @@ input[type="tel"] {
     box-sizing: border-box;
 }
 
-a {
-    color: #00ABE4;
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block; /* Permite aplicar márgenes y paddings correctamente */
-}
-
-.button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.button > a {
->>>>>>> 25ba51c (correcciones)
-=======
-button{
->>>>>>> 9832909 (cambios ana)
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    border: 2px solid #e9f1fa;
-    height: 3rem;
-    width: 10rem;
-    border-radius: 5px;
-    background-color: #e9f1fa7c;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    font-size: 17px;
-  }
-=======
-}
-
-a:hover {
-    text-decoration: underline;
-}
 
 input:invalid {
     border-color: rgb(243, 239, 239);
@@ -162,10 +143,8 @@ input:valid {
         padding: 2rem;
     }
 }
->>>>>>> 25ba51c (correcciones)
+
 =======
->>>>>>> 6f1da46 (Revert "correcciones")
-=======
-    font-size: 17px;
-  }
->>>>>>> 9832909 (cambios ana)
+
+
+

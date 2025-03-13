@@ -77,29 +77,41 @@ label {
     box-sizing: border-box;
 }
 
-.buttons {
+.buttons{
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
     justify-content: space-between;
-    gap: 1rem;
-}
 
-.buttons > a {
+    background-color: transparent;
+    border: none;
+  }
+
+  .buttons a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .buttons > a, .buttons > button{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
-    border: 2px solid #e9f1fa;
+    border: 2px solid #0078A0;
     height: 3rem;
     width: 10rem;
     border-radius: 5px;
-    background-color: #e9f1fa7c;
-    color: black;
+    background-color: #00abe4d3;
+    color: #e7dbdbf5;
     text-decoration: none;
     font-weight: bold;
-}
+    font-size: 17px;
+  }
+
+  .buttons{
+    margin:0 auto;
+  }
+  
 
 a:hover {
     text-decoration: underline;
@@ -139,20 +151,3 @@ textarea:valid {
     }
 }
 
-button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    border: 2px solid #e9f1fa;
-    height: 3rem;
-    width: 10rem;
-    border-radius: 5px;
-    background-color: #e9f1fa7c;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 17px;
-  }
