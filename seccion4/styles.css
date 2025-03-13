@@ -74,11 +74,40 @@ y tambien que tenga un margen abajo*/
         
 
 /*Da estilo a la seccion de "preffer-pay-method"(metodo de pago preferido)*/
-    .preffer-pay-method{
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
-    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      border: 1px solid #E9F1FA;
+      border-radius: 5px;
+      background-color: #e9f1fa7c;
+      padding: 1rem;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .buttons > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border: 2px solid #e9f1fa;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 5px;
+    background-color: #e9f1fa7c;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
 /*Estilo para todo la seccion "purchase-frequency"(frecuencia de compra)*/
     .purchase-frequency{
@@ -96,3 +125,22 @@ y tambien que tenga un margen abajo*/
         display: flex;
         flex-direction: column;
     }
+
+
+    .pay-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 5px;
+  }
+  
+  .pay-options label {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  
+  .pay-options input[type="radio"] {
+      margin-right: 10px;
+  }
