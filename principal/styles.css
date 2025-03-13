@@ -24,3 +24,13 @@ p {
     border-radius: 5px;
     font-size: 18px;
 }
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 1rem 2rem;
+    width: 100%;
+    
+  }
