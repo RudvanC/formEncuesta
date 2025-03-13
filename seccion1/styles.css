@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 button{
 =======
 * {
@@ -97,6 +98,9 @@ a {
 
 .button > a {
 >>>>>>> 25ba51c (correcciones)
+=======
+button{
+>>>>>>> 9832909 (cambios ana)
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,6 +115,7 @@ a {
     color: black;
     text-decoration: none;
     font-weight: bold;
+<<<<<<< HEAD
 <<<<<<< HEAD
     font-size: 17px;
   }
@@ -160,3 +165,7 @@ input:valid {
 >>>>>>> 25ba51c (correcciones)
 =======
 >>>>>>> 6f1da46 (Revert "correcciones")
+=======
+    font-size: 17px;
+  }
+>>>>>>> 9832909 (cambios ana)
