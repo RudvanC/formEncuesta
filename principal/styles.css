@@ -1,11 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/*Estilo para todo el documento en general*/
 body {
-    font-family: sans-serif;
-    text-align: center;
-    padding: 50px;
-    background-color: #f0f8ff; /* Azul claro suave */
+    background: hsl(192, 65%, 84%);
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/Imagenes/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-h1 {
-    color: #3366cc; /* Azul más intenso */
+
+/*Estilo para la barra de navegación*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #E9F1FA;
+    color: #00ABE4;
+}
+
+.announcements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #00ABE4;
+    height: 60px;
+    color: #f8f8f8;
+    font-size: 1.2em;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.announcements p {
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina paddings */
+    line-height: 2.2; /* Ajusta la altura de línea para mejor apariencia */
+    white-space: normal; /* Permite que el texto se divida en varias líneas si es necesario */
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto; /* Centra horizontalmente y agrega margen superior */
+    padding: 5rem;
+    border-radius: 50px;
+    width: 80%; /* Ajusta el ancho para que no sea demasiado grande en móviles */
+    
+}
+
+section {
+    display:contents;
+    font-style:italic;
+    font-
 }
 p {
     font-size: 18px;
@@ -22,5 +76,7 @@ p {
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 18px;
+    height: 60px;
+    font-size: 1.2em;
+    text-align: center; /* Centra el texto horizontalmente */
 }
