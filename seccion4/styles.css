@@ -76,6 +76,7 @@ y tambien que tenga un margen abajo*/
 
 /*Da estilo a la seccion de "preffer-pay-method"(metodo de pago preferido)*/
 
+<<<<<<< HEAD
   section {
     display: flex;
     flex-direction: column;
@@ -84,6 +85,16 @@ y tambien que tenga un margen abajo*/
     border-radius: 5px;
     background-color: #e9f1fa7c;
     padding: 1rem;
+=======
+    section {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      border: 1px solid #E9F1FA;
+      border-radius: 5px;
+      background-color: hsla(212, 63%, 95%, 0.486);
+      padding: 1rem;
+>>>>>>> 8672e05 (cambios)
   }
 
   .buttons{
