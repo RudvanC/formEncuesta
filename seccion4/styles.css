@@ -7,11 +7,17 @@
 
   /*Estilo para todo el documento en general*/
   body {
-    background: #3a373792;
+    background: #ffffff;
     font-family: 'Lato', sans-serif;
     height: 100vh;
     width: 100vw;
-  }
+    background-image: url("/Imagenes/background.webp"); /* Asegúrate de que la ruta es correcta */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+}
+  
 
 /*Estilo para todo el contenido dentro de main*/
   main{
@@ -20,8 +26,9 @@
     width: 600px;
     margin: auto;
     margin-top: 3rem;
-    padding: 3rem;
-    border: 2px solid #50aa9b;
+    padding: 5rem;
+
+    border-radius: 50px;
   }
 
 /*Estilo para la barra de navegación*/
@@ -30,7 +37,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: #50aa9b;
+    background: #E9F1FA;
+    color: #00ABE4;
   }
 
 /*Barra donde apareceran anuncios o texto destacable*/
@@ -39,8 +47,10 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background: wheat;
+    background: #00ABE4;
     height: 40px;
+    color: #f8f8f8;
+    font-size: 1.2rem;
   }
 
 
