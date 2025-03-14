@@ -25,14 +25,13 @@
       <!-- Producto Comprado -->
       <section class="producto">    
         <label for="producto">Producto Comprado:</label>
-            <select id="product" name="producto" required>
-              <option value="">Selecciona una opción</option>
-              <option value="">Curso HTML</option>
-              <option value="">Curso CSS</option>
-              <option value="">Curso JS</option>
-            </select>
-        </section>    
-   
+        <select id="product" name="producto" required>
+          <option value="">Selecciona una opción</option>
+          <option value="Curso HTML">Curso HTML</option>
+          <option value="Curso CSS">Curso CSS</option>
+          <option value="Curso JS">Curso JS</option>
+        </select>
+      </section>    
       
       <!-- Calificación de la Compra -->
       <section class="calificacion">
@@ -41,7 +40,7 @@
         <span id="valorRango">5</span>
         <span id="mensajeCalificacion"></span> <!-- Nuevo: Para mostrar el mensaje -->    
       </section>
-
+    
       <!-- Comentarios -->
       <section class="comentarios">    
         <label for="comentarios">Comentarios:</label>
@@ -53,14 +52,14 @@
         <label for="fechaCompra">Fecha de Compra:</label>
         <input type="datetime-local" id="fechaCompra" name="fechaCompra" required>    
       </section>
-
+    
       <!-- Archivo de Recibo -->
       <section class="recibo">    
         <label for="recibo">Archivo de Recibo:</label>
         <input type="file" id="recibo" name="recibo" accept=".pdf,.jpg,.png" required>
         <small>Aceptamos formatos: PDF, JPG, PNG</small>    
       </section>
-
+    
       <!-- Navegación -->
       <div class="buttons">
         <a href="/seccion1/seccion1.html">Anterior</a>
@@ -71,3 +70,7 @@
   <script src="seccion2.js"></script>
 </body>
 </html>
+
+
+
+

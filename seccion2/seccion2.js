@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const formData = new FormData(form);
             const datos = {};
             formData.forEach((value, key) => {
-                datos[`seccion2_${key}`] = value; // Agregar prefijo "seccion1_"
+                datos[`seccion2_${key}`] = value; // Agregar prefijo "seccion2_"
             });
 
             // Guardar datos en localStorage
@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('El formulario con ID "formSeccion2" no fue encontrado.');
     }
 });
+
 
 // Función para validar el formulario
 function validarFormulario(producto, fechaCompra, recibo, comentarios) {
