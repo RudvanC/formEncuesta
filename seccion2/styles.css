@@ -119,7 +119,7 @@ section > label{
   padding-bottom: 10px;
 }
 
-input {
+input, select {
   width: 100%; /* Ancho del select */
   height: 40px; /* Altura del select */
   padding: 8px; /* Espaciado interno */

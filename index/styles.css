@@ -182,6 +182,7 @@ main {
     background: #E9F1FA;
     color: #00ABE4;
     width: 100%;
+   
 }
 
 /* Barra donde aparecerán anuncios o texto destacable */
@@ -195,6 +196,7 @@ main {
     color: #f8f8f8;
     font-size: 1.2rem;
     justify-content: space-around;
+    font-weight: 700;
 }
 
 @media (max-width: 768px) {

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
 
             // Obtener los valores de los campos
-            const producto = document.getElementById('producto').value.trim();
+            const producto = document.getElementById('producto').value;
             const fechaCompra = document.getElementById('fechaCompra').value;
             const recibo = document.getElementById('recibo').files[0];
             const comentarios = document.getElementById('comentarios').value.trim();

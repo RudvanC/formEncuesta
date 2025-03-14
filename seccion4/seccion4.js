@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 datosSeccion4[`seccion4_${key}`] = value; // Agregar prefijo "seccion4_"
             });
 
-            // Combinar todos los datos en un solo objeto
+            // Combinar todos los datos en un solo objeto 
             const datosCompletos = {
                 ...datosSeccion1,
                 ...datosSeccion2,
