@@ -2,43 +2,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('formSeccion2');
 
     if (form) {
-        // Configurar el evento de envío del formulario
         form.addEventListener('submit', function (event) {
             event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
 
-            // Obtener los valores de los campos
-            const producto = document.getElementById('producto').value;
-            const fechaCompra = document.getElementById('fechaCompra').value;
-            const recibo = document.getElementById('recibo').files[0];
-            const comentarios = document.getElementById('comentarios').value.trim();
-            const calificacion = document.getElementById('calificacion').value;
-
-            // Validar que todos los campos estén llenos
-            if (!validarFormulario(producto, fechaCompra, recibo, comentarios)) {
-                return; // Detener el envío si la validación falla
-            }
+            // Recopilar datos del formulario
+            const formData = new FormData(form);
+            const datos = {};
+            formData.forEach((value, key) => {
+                datos[`seccion2_${key}`] = value; // Agregar prefijo "seccion1_"
+            });
 
             // Guardar datos en localStorage
-            const datosSeccion2 = {
-                seccion2_producto: producto,
-                seccion2_fechaCompra: fechaCompra,
-                seccion2_calificacion: calificacion,
-                seccion2_comentarios: comentarios,
-                seccion2_reciboNombre: recibo.name, // Guardar solo el nombre del archivo
-            };
-            localStorage.setItem('datosSeccion2', JSON.stringify(datosSeccion2));
+            localStorage.setItem('datosSeccion2', JSON.stringify(datos));
 
             // Redirigir a la siguiente sección
             window.location.href = '/seccion3/seccion3.html';
         });
-
-        // Configurar el evento de cambio para el campo de calificación
-        const calificacionInput = document.getElementById('calificacion');
-        if (calificacionInput) {
-            calificacionInput.addEventListener('input', function (event) {
-                mostrarValor(this.value); // Actualizar el valor y el mensaje de calificación
-            });
-        }
     } else {
         console.error('El formulario con ID "formSeccion2" no fue encontrado.');
     }
