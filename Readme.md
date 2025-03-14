@@ -1,7 +1,9 @@
 PROYECTO FORMULARIO ENCUESTA:
 12/03/25
 
+/// 10:00am///
 
+    Hicimos un boceto en papel de la estructura de todas las secciones
 
 /// 11:00am///
     ¡¡¡¡¡Ya tenemos el código html!!!!!!
@@ -15,7 +17,7 @@ PROYECTO FORMULARIO ENCUESTA:
 
 ///11:28 am///
 
-    funciones:
+    Dividimos las funciones:
         sección 1: en común
         sección 2:  Daniel
         sección 3: Ana
@@ -61,3 +63,15 @@ PROYECTO FORMULARIO ENCUESTA:
 ///08:30am///
 
     Hacemos pull todos y verificamos que funciona 🙂
+
+///09:0am///
+
+    Error al recibir los datos del formulario
+
+///10:00am///
+
+    Corregimos el js y revisamos que funcione
+
+///11:30///
+
+    Decidimos como se va a presentar
