@@ -26,30 +26,38 @@ PROYECTO FORMULARIO ENCUESTA:
 13/03/25
 
 ///09:00am///
+    
     Código casi listo, vamos a poner todas las secciones con los mismo estilos y prepara una pagina de inicio (Rudvan)
 
 ///11:30am///
+    
     Estilo listo!!!
     Js listos!!!
 
 ///14:10pm///
+    
     Se dañó el código, creación de ramas externas con dificultades para regresar a rama principal, 
     en el intento se hacen varios  reverse, un merge y se cruzan datos... código perdido.
 
 ///14:30pm///
+    
     Nos vamos con código jodido y git jodido, seguiremos trabajando en casa
 
 ////18:30pm:///
+    
     Eliminación de ramas externas y regresamos el header al commit del código bueno
 
 ///19:00pm:///
+    
     Rudvan consigue hacer un merge y recuperar código!!!!!!
 
 ///01:30am///
-Último push de Rudvan
+
+    Último push de Rudvan
 
 
 
 **14/03/25:
 ///08:30am///
-Hacemos pull todos y verificamos que funciona 🙂
+
+    Hacemos pull todos y verificamos que funciona 🙂
