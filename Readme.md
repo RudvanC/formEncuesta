@@ -75,3 +75,10 @@ PROYECTO FORMULARIO ENCUESTA:
 ///11:30///
 
     Decidimos como se va a presentar
+
+    Index: Rudvan
+    Principal: Ana 
+    Seccion 1: Dani
+    Seccion 2: Dani
+    Seccion 3: Ana
+    Seccion 4: Rudvan
