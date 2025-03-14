@@ -131,7 +131,7 @@ main {
     color: white;
     font-weight: bold;
     text-align: center;
-    transition: all 0.5s ease; /* Transición suave */
+    transition: bottom 0.5s ease; /* Transición suave */
 }
 
 /* Efecto hover */

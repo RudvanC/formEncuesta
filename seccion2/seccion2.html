@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Contacto</title>
   <link rel="stylesheet" href="/seccion2/styles.css">
 </head>
+
 <body>
   <header>
-    
-    <div class="nav-bar"> 
+
+    <div class="nav-bar">
       <div class="image-logo">
         <a href="/principal/index.html"><img src="/Imagenes/logo.png" alt="Logo empresa LATAMCODERS"></a>
       </div>
       <div class="home-logo">
         <a href="/principal/index.html"><img src="/Imagenes/bx--home.svg" alt="Logo empresa LATAMCODERS"></a>
-      </div> 
+      </div>
     </div>
     <div class="announcements">
       <p>Experiencia de Compra</p>
@@ -27,7 +29,7 @@
     </div>
     <form id="formSeccion2">
       <!-- Producto Comprado -->
-      <section class="producto">    
+      <section class="producto">
         <label for="producto">Producto Comprado:</label>
         <select id="product" name="producto" required>
           <option value="">Selecciona una opción</option>
@@ -35,35 +37,39 @@
           <option value="Curso CSS">Curso CSS</option>
           <option value="Curso JS">Curso JS</option>
         </select>
-      </section>    
-      
+      </section>
+
       <!-- Calificación de la Compra -->
       <section class="calificacion">
         <label for="calificacion">Calificación de la Compra:</label>
-        <input type="range" id="calificacion" name="calificacion" min="1" max="10" value="5" oninput="mostrarValor(this.value)">
-        <span id="valorRango">5</span>
-        <span id="mensajeCalificacion"></span> <!-- Nuevo: Para mostrar el mensaje -->    
+        <input type="range" id="calificacion" name="calificacion" min="1" max="10" value="5"
+          oninput="mostrarValor(this.value)">
+        <span>
+          <span id="valorRango">5</span>
+          <span id="mensajeCalificacion"></span> <!-- Nuevo: Para mostrar el mensaje -->
+        </span>
       </section>
-    
+
       <!-- Comentarios -->
-      <section class="comentarios">    
+      <section class="comentarios">
         <label for="comentarios">Comentarios:</label>
-        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí"></textarea>    
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"
+          placeholder="Escribe tus comentarios aquí"></textarea>
       </section>
-      
+
       <!-- Fecha de Compra -->
-      <section class="fecha-compra">    
+      <section class="fecha-compra">
         <label for="fechaCompra">Fecha de Compra:</label>
-        <input type="datetime-local" id="fechaCompra" name="fechaCompra" required>    
+        <input type="datetime-local" id="fechaCompra" name="fechaCompra" required>
       </section>
-    
+
       <!-- Archivo de Recibo -->
-      <section class="recibo">    
+      <section class="recibo">
         <label for="recibo">Archivo de Recibo:</label>
         <input type="file" id="recibo" name="recibo" accept=".pdf,.jpg,.png" required>
-        <small>Aceptamos formatos: PDF, JPG, PNG</small>    
+        <small>Aceptamos formatos: PDF, JPG, PNG</small>
       </section>
-    
+
       <!-- Navegación -->
       <div class="buttons">
         <a href="/seccion1/seccion1.html">Anterior</a>
@@ -73,8 +79,5 @@
   </main>
   <script src="seccion2.js"></script>
 </body>
+
 </html>
-
-
-
-
