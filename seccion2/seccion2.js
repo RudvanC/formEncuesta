@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
             // Guardar datos en localStorage
             localStorage.setItem('datosSeccion2', JSON.stringify(datos));
 
+            console.log('Datos guardados en localStorage (Sección 2):', datos);
+
+
             // Redirigir a la siguiente sección
             window.location.href = '/seccion3/seccion3.html';
         });

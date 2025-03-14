@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 ...datosSeccion4,
             };
 
+
+            if (!datosSeccion2) {
+                console.error('No se encontraron datos de la Sección 2 en localStorage');
+            }
+            
             console.log('Datos completos:', datosCompletos); // Verifica los datos recopilados
 
             // Crear un formulario dinámico para enviar los datos a httpbin.org/post
